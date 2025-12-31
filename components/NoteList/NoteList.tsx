@@ -26,7 +26,7 @@ const NoteList = ({ notes }: NoteListProps) => {
     <ul className={css.list}>
       {notes.map(item => (
         <li key={item.id} className={css.listItem}>
-          <Link href={`/notes/${item.id}`} className={css.wrapper}>
+          <div className={css.wrapper}>
             <h2 className={css.title}>{item.title}</h2>
             <p className={css.content}>{item.content}</p>
             <div className={css.footer}>
@@ -42,7 +42,7 @@ const NoteList = ({ notes }: NoteListProps) => {
                 Delete
               </button>
             </div>
-          </Link>
+          </div>
         </li>
       ))}
     </ul>

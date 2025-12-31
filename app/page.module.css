@@ -5,9 +5,14 @@
 .container {
   width: 90%;
   max-width: 1280px;
-  /* height: 100vh; */
   margin: 50px auto;
   padding: 0 16px 16px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -19,6 +24,7 @@
 }
 
 .description {
+  
   font-size: 18px;
   color: #444444;
   line-height: 28px;
