@@ -78,7 +78,7 @@ export default function NotesClient({ tag }: NotesProp) {
 
         {isOpen && (
           <Modal onClose={closeModal}>
-            <NoteForm onSuccessClose={closeModal} />
+            <NoteForm />
           </Modal>
         )}
       </section>
