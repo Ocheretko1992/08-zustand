@@ -22,7 +22,7 @@ export default function NoteForm() {
       await queryClient.invalidateQueries({ queryKey: ['notes'] });
 
       clearDraft();
-      router.push('/notes/filter/all');
+      router.back();
     },
   });
 
